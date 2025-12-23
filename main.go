@@ -108,7 +108,7 @@ func main() {
 
 	// Start handler loops
 
-	handlers.StartHandlerLoops(conn, peer, &peerMu, uiInstance, receiver)
+	go handlers.StartHandlerLoops(conn, peer, &peerMu, uiInstance, receiver)
 	go application.InputLoop(conn, peer, &peerMu, uiInstance)
 
 	// Block to prevent exit

@@ -8,7 +8,9 @@ A TCP-like protocol implementation over UDP in Go, featuring NAT traversal throu
 - **NAT Traversal**: Connect to peers across NAT boundaries using UDP hole punching
 - **CLI Tools**: Discover your public IP address and establish peer-to-peer connections
 - **Terminal UI**: Interactive interface for managing connections
-- **Written in Go**: Fast, concurrent, and efficient implementation
+- **Reliable Delivery**: ACKs, retransmission, and packet framing for data integrity
+- **Acknowledgement Window**: Sliding window mechanism for efficient packet acknowledgement and flow control
+
 
 ## Getting Started
 

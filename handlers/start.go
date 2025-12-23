@@ -15,5 +15,5 @@ func StartHandlerLoops(conn *net.UDPConn, peer *types.Peer, peerMu *sync.Mutex, 
 	go KeepAliveLoop(conn, peer, uiInstance)
 	go LivenessMonitorLoop(peer, peerMu, uiInstance)
 	go SendLoop(conn, peer, peerMu, uiInstance)
-	return nil
+	select {}
 }
